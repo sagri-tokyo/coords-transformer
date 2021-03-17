@@ -1,0 +1,11 @@
+# Python
+
+.pytest_cache
+.venv/
+*.py[cod]
+*$py.class
+*.pyc
+__pycache__/
+
+# Mac
+.DS_Store
