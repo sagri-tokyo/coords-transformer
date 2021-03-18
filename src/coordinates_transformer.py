@@ -2,7 +2,7 @@ from constants import L, ZOOM
 import math
 
 
-class LocationConverter:
+class CoordinatesTransformer:
     @classmethod
     def convert_lng_zoom_to_x(cls, long, zoom=ZOOM):
         return round((2 ** (zoom + 7)) * ((long / 180) + 1))
