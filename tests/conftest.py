@@ -15,19 +15,6 @@ SAMPLE_POINTS = [
     Point(x=28941096, y=13807510, lng=130.504283, lat=30.335927),
 ]
 
-@pytest.fixture(scope="session")
-def monkeypatch():
-    from _pytest.monkeypatch import MonkeyPatch
-    monkeypatch = MonkeyPatch()
-    return monkeypatch
-
-@pytest.fixture(scope="module")
-def setup_zoom(monkeypatch):
-    monkeypatch.setattr("src.constants.ZOOM", 17)
-    importlib.reload(coords_transformer)
-    yield
-    monkeypatch.setattr("src.constants.ZOOM", ZOOM)
-
 @pytest.fixture(params=SAMPLE_POINTS, scope="function")
 def sample_point(request):
     return request.param
