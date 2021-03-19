@@ -13,7 +13,7 @@ def _dev_requirements():
     return [name.rstrip() for name in open(path.join(root_dir, 'requirements-dev.txt')).readlines()]
 
 def get_version():
-    version_filepath = path.join(path.dirname(__file__), src, 'version.py')
+    version_filepath = path.join(path.dirname(__file__), "src", 'version.py')
     with open(version_filepath) as f:
         for line in f:
             if line.startswith('__version__'):

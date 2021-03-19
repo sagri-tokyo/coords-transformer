@@ -5,7 +5,7 @@ class TestCoordsTransformer:
     @pytest.fixture(scope="class")
     def coords_transformer(self):
         from src.coords_transformer import CoordsTransformer
-        yield CoordsTransformer
+        yield CoordsTransformer()
 
     def test_convert_lng_zoom_to_x(self, coords_transformer, sample_point):
         assert coords_transformer.convert_lng_zoom_to_x(sample_point.lng) == pytest.approx(sample_point.x)
