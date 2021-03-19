@@ -2,11 +2,9 @@ import importlib
 import sys
 import os
 import pytest
-
-sys.path.append(os.path.abspath(os.path.dirname(os.path.abspath(__file__)) + "../../src/"))
-from constants import ZOOM
-import coordinates_transformer
-from point import Point
+from coords_transformer.constants import ZOOM
+import coords_transformer
+from coords_transformer.point import Point
 
 
 #  Values used as parameters are on the below site.
@@ -25,10 +23,10 @@ def monkeypatch():
 
 @pytest.fixture(scope="module")
 def setup_zoom(monkeypatch):
-    monkeypatch.setattr("constants.ZOOM", 17)
-    importlib.reload(coordinates_transformer)
+    monkeypatch.setattr("coords_transformer.constants.ZOOM", 17)
+    importlib.reload(coords_transformer)
     yield
-    monkeypatch.setattr("constants.ZOOM", ZOOM)
+    monkeypatch.setattr("coords_transformer.constants.ZOOM", ZOOM)
 
 @pytest.fixture(params=SAMPLE_POINTS, scope="function")
 def sample_point(request):

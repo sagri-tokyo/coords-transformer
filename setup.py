@@ -2,7 +2,7 @@ from setuptools import find_packages, setup
 from codecs import open
 from os import path
 
-package_name = "coordinates-transformer"
+package_name = "coords_transformer"
 
 root_dir = path.abspath(path.dirname(__file__))
 
@@ -31,14 +31,14 @@ setup(
     install_requires_dev=_dev_requirements(),
 	author='tsurutan',
     author_email='tsurutan.android@gmail.com',
-	maintainer='Sagri',
-    maintainer_email='corporate@sagri.tokyo',
     url='https://github.com/sagri-tokyo/coordinates-transformer',
     description='Transform pixel coordinates to tile coordinates',
     long_description=long_description,
-    keywords='tile, coordinates, pixel',
+    keywords='coordinates transformer',
     classifiers=[
-        'License :: OSI Approved :: BSD License',
+        'License :: OSI Approved :: MIT License',
+        'Programming Language :: Python :: 3.4',
+        'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
 		'Programming Language :: Python :: 3.7',
 		'Programming Language :: Python :: 3.8'
