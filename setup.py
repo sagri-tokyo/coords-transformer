@@ -13,7 +13,7 @@ def _dev_requirements():
     return [name.rstrip() for name in open(path.join(root_dir, 'requirements-dev.txt')).readlines()]
 
 def get_version():
-    version_filepath = path.join(path.dirname(__file__), package_name, 'version.py')
+    version_filepath = path.join(path.dirname(__file__), src, 'version.py')
     with open(version_filepath) as f:
         for line in f:
             if line.startswith('__version__'):
@@ -24,7 +24,7 @@ with open('README.md', encoding='utf-8') as f:
 
 setup(
     name=package_name,
-    packages=[package_name],
+    packages=find_packages(),
     version=get_version(),
     license='MIT',
     install_requires=_requirements(),

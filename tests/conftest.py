@@ -2,9 +2,9 @@ import importlib
 import sys
 import os
 import pytest
-from coords_transformer.constants import ZOOM
-import coords_transformer
-from coords_transformer.point import Point
+from src.constants import ZOOM
+from src import coords_transformer
+from src.point import Point
 
 
 #  Values used as parameters are on the below site.
@@ -23,10 +23,10 @@ def monkeypatch():
 
 @pytest.fixture(scope="module")
 def setup_zoom(monkeypatch):
-    monkeypatch.setattr("coords_transformer.constants.ZOOM", 17)
+    monkeypatch.setattr("src.constants.ZOOM", 17)
     importlib.reload(coords_transformer)
     yield
-    monkeypatch.setattr("coords_transformer.constants.ZOOM", ZOOM)
+    monkeypatch.setattr("src.constants.ZOOM", ZOOM)
 
 @pytest.fixture(params=SAMPLE_POINTS, scope="function")
 def sample_point(request):

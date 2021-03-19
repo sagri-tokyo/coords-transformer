@@ -4,7 +4,7 @@ import pytest
 class TestCoordsTransformer:
     @pytest.fixture(scope="class")
     def coords_transformer(self):
-        from coords_transformer.coords_transformer import CoordsTransformer
+        from src.coords_transformer import CoordsTransformer
         yield CoordsTransformer
 
     def test_convert_lng_zoom_to_x(self, coords_transformer, sample_point):
