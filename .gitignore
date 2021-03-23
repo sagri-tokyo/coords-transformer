@@ -6,6 +6,7 @@
 *$py.class
 *.pyc
 __pycache__/
+.coverage
 
 # Mac
 .DS_Store
