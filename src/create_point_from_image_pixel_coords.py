@@ -7,6 +7,6 @@ def create_point_from_image_pixel_coords(point: List[int], ctr_pt: Point, size :
 	diff = int(size / 2)
 	origin_x = ctr_pt.x - diff
 	origin_y = ctr_pt.y - diff
-	x,y = point[0], point[1]
-	point_obj = create_from_x_y_zoom(x=origin_x + x, y=origin_y + y, zoom=zoom)
+	x_distance, y_distance = point[0], point[1]
+	point_obj = create_from_x_y_zoom(x=origin_x + x_distance, y=origin_y + y_distance, zoom=zoom)
 	return point_obj

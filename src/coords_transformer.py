@@ -12,7 +12,7 @@ def convert_lat_zoom_to_y(lat: float, zoom: int = ZOOM) -> int:
 def convert_x_zoom_to_lng(x: int, zoom: int = ZOOM) -> float:
     return 180 * ((x / 2 ** (zoom + 7)) - 1)
 
-def convert_y_to_lat(y: int, zoom: int = ZOOM) -> float:
+def convert_y_zoom_to_lat(y: int, zoom: int = ZOOM) -> float:
     atanh_value = math.sin((math.pi / 180) * L)
     tanh_value = -1 * (math.pi / (2 ** (zoom + 7))) * y + math.atanh(atanh_value)
     return (180 / math.pi) * (math.asin(math.tanh(tanh_value)))
