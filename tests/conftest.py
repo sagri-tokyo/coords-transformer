@@ -10,6 +10,7 @@ SAMPLE_POINTS = [
     Point(x=28941096, y=13807510, lng=130.504283, lat=30.335927),
 ]
 
+
 @pytest.fixture(params=SAMPLE_POINTS, scope="function")
 def sample_point(request):
     return request.param
