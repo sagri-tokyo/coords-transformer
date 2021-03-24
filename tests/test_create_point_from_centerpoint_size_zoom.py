@@ -1,6 +1,7 @@
 import pytest
-from src.constants import ZOOM, PIXEL_SIZE
-from src.create_point_from_image_pixel_coords import *
+from coords_transformer.constants import ZOOM, PIXEL_SIZE
+from coords_transformer.point.factory import create_from_x_y_zoom
+from coords_transformer.point.service import create_point_from_image_pixel_coords
 from tests.conftest import SAMPLE_POINTS
 
 HALF_PIXEL = int(PIXEL_SIZE / 2)

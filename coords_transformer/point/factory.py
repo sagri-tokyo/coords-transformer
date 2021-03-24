@@ -1,7 +1,6 @@
-from src.point.point import Point
-from src.coords_transformer import *
-from src.constants import ZOOM
-
+from .point import Point
+from coords_transformer.coords_calculation import *
+from coords_transformer.constants import ZOOM
 
 def create_from_x_y_zoom(x: int, y: int, zoom: int = ZOOM) -> Point:
 	lng = convert_x_zoom_to_lng(x, zoom)

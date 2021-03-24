@@ -1,10 +1,5 @@
-import importlib
-import sys
-import os
 import pytest
-from src.constants import ZOOM
-from src import coords_transformer
-from src.point.point import Point
+from coords_transformer.point.point import Point
 
 
 #  Values used as parameters are on the below site.

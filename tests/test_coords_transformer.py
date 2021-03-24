@@ -1,5 +1,5 @@
 import pytest
-from src.coords_transformer import *
+from coords_transformer.coords_calculation import *
 
 class TestCoordsTransformer:
     def test_convert_lng_zoom_to_x(self, sample_point):

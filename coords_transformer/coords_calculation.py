@@ -1,4 +1,4 @@
-from src.constants import L, ZOOM
+from coords_transformer.constants import L, ZOOM
 import math
 
 
