@@ -6,6 +6,11 @@
 *$py.class
 *.pyc
 __pycache__/
+.coverage
+.mypy_cache
 
 # Mac
 .DS_Store
+
+# vscode
+.vscode
