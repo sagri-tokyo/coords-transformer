@@ -2,7 +2,7 @@ import pytest
 from coords_transformer.point.point import Point
 
 
-#  Values used as parameters are on the below site.
+#  Values used as parameters are on the follwing link.
 #  https://www.trail-note.net/tech/coordinate/
 SAMPLE_POINTS = [
     Point(x=29941927, y=12046802, lng=141.242035, lat=45.178506),

@@ -1,6 +1,8 @@
 from coords_transformer.constants import L, ZOOM
 import math
 
+# These calculations are based on the follwing link.
+# https://www.trail-note.net/tech/coordinate/
 
 def convert_lng_zoom_to_x(lng: float, zoom: int = ZOOM) -> int:
     return round((2 ** (zoom + 7)) * ((lng / 180) + 1))
