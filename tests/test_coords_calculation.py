@@ -2,7 +2,7 @@ import pytest
 from coords_transformer.coords_calculation import *
 
 
-class TestCoordsTransformer:
+class TestCoordsCalculation:
     def test_convert_lng_zoom_to_x(self, sample_point):
         assert convert_lng_zoom_to_x(sample_point.lng) == pytest.approx(sample_point.x)
 
