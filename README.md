@@ -31,7 +31,7 @@ convert_x_zoom_to_lng(29941927, 17)
 convert_y_zoom_to_lat(12046802, 17)
 ```
 
-Examples of transforming pixel coordinates to latitude and longitude coordinates, and vise versa
+Examples of getting a point object with world coordinates, longitude and latitude from pixel coordinates within a image.
 
 ```python
 from coords_transformer.point.factory import create_from_lat_lng_zoom
