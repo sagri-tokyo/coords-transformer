@@ -38,7 +38,7 @@ setup(
     author='tsurutan',
     author_email='tsurutan.android@gmail.com',
     url='https://github.com/sagri-tokyo/coordinates-transformer',
-    description='Transform pixel coordinates to tile coordinates',
+    description='Transform pixel coordinates to latitude and longitude, and vise versa.',
     long_description=long_description,
     long_description_content_type='text/markdown',
     keywords='coordinates transformer',

@@ -1,6 +1,6 @@
 # coords-transformer
 
-coords-transformer is a library to transform pixel coordinate to latitude and longitude, and vise versa.
+coords-transformer is a library to transform pixel coordinates to latitude and longitude, and vise versa.
 
 
 ## Installing
@@ -13,7 +13,7 @@ pip install coords-transformer
 
 ## Examples
 
-Examples of transforming pixel coordinate to latitude and longitude, and vise versa
+Examples of transforming pixel coordinates to latitude and longitude, and vise versa
 
 ```python
 from coords_transformer.coords_calculation import *
