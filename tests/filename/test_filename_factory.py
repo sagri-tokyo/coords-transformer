@@ -3,7 +3,7 @@ from coords_transformer.filename.filename import FileName
 
 
 SAMPLE_FILENAME_STRS = [
-    "0_long141dot242035-lati45dot178506-size512-zoom17.jpg",
+	"0_long141dot242035-lati45dot178506-size512-zoom17.jpg",
 	"1_long138dot943905-lati35dot855499-size512-zoom17.jpg",
 	"2_long130dot504283-lati30dot335927-size512-zoom17.jpg"
     ]
