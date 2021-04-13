@@ -17,7 +17,7 @@ pip install coords-transformer
 
 ## Examples
 
-Examples of transforming pixel coordinates to latitude and longitude, and vise versa
+### Examples of transforming pixel coordinates to latitude and longitude, and vise versa
 
 ```python
 from coords_transformer.coords_calculation import *
@@ -35,13 +35,13 @@ convert_x_zoom_to_lng(29941927, 17)
 convert_y_zoom_to_lat(12046802, 17)
 ```
 
-A example of designated filename format
+### A example of designated filename format
 
 This has idx, longitude, latitude of center point, pixel size and zoom level.
 
 `0_long130dot51051050424576-lati33dot25308662907951-size512-zoom17.jpg`
 
-A example of getting a point object with pixel coordinates, longitude and latitude from pixel coordinate within an image.
+### A example of getting a point object with pixel coordinates, longitude and latitude from pixel coordinate within an image.
 
 ```python
 from coords_transformer.point.factory import create_from_lat_lng_zoom
