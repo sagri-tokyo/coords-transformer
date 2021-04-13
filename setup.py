@@ -40,6 +40,7 @@ setup(
     url='https://github.com/sagri-tokyo/coordinates-transformer',
     description='Transform pixel coordinates to tile coordinates',
     long_description=long_description,
+    long_description_content_type='text/markdown',
     keywords='coordinates transformer',
     classifiers=[
         'License :: OSI Approved :: MIT License',
