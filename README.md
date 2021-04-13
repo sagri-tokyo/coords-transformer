@@ -47,13 +47,13 @@ from coords_transformer.filename.factory import create_from_filename
 # Create a Filename object from filename.
 filename = "0_long130dot51051050424576-lati33dot25308662907951-size512-zoom17.jpg"
 path = "image/"
-create_from_filename(filename, path)
-# return value -> FileName(lng=130.51051050424576, lat=33.25308662907951, idx=0, size=512, path='image/', zoom=17)
+filename_obj = create_from_filename(filename, path)
+# filename_obj -> FileName(lng=130.51051050424576, lat=33.25308662907951, idx=0, size=512, path='image/', zoom=17)
 
 # Create a Point object from latitude, longitude and zoom level.
 # This Point obejct should be created from longitude and latitude of an image center point
-create_from_lat_lng_zoom(filename_obj.lat, filename_obj.lng)
-# return value -> Point(lng=130.51051050424576, lat=33.25308662907951, x=28941677, y=13487547)
+center_point = create_from_lat_lng_zoom(filename_obj.lat, filename_obj.lng)
+# center_point -> Point(lng=130.51051050424576, lat=33.25308662907951, x=28941677, y=13487547)
 
 # Pass x and y pixel coordinate within an image, center_point, image pixel size and zoom level
 # Then you can get a Point object
