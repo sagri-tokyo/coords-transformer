@@ -1,5 +1,6 @@
 import pytest
 from coords_transformer.filename.filename import FileName
+from coords_transformer.filename.factory import create_from_filename
 
 
 SAMPLE_FILENAME_STRS = [
@@ -17,13 +18,6 @@ SAMPLE_FILENAME_OBJS = [
 
 
 class TestFileNameFactory:
-	@pytest.fixture(scope="class")
-	def filename_factory(self):
-		from coords_transformer.filename.factory import FileNameFactory
-		filename_factory = FileNameFactory()
-		return filename_factory
-
-
-	def test_create_from_filename(self, filename_factory):
+	def test_create_from_filename(self):
 		for filename_str, filename_obj in zip(SAMPLE_FILENAME_STRS, SAMPLE_FILENAME_OBJS):
-			assert filename_factory.create_from_filename(filename=filename_str, path=filename_obj.path) == filename_obj
+			assert create_from_filename(filename=filename_str, path=filename_obj.path) == filename_obj
