@@ -24,7 +24,7 @@ Examples of transforming pixel coordinates to latitude and longitude, and vise v
 	# Get latitude from y pixel coordinate based on the zoom level
 	convert_y_zoom_to_lat(12046802, 17)
 
-An example of a designated filename format
+An example of the designated filename format
 
 If you'd like to get the latitude and longitude of a certain point within the satellite image, you have to name your satellite image file in the following format.
 It has an index, longitude and latitude of the center point, image pixel size, and zoom level.

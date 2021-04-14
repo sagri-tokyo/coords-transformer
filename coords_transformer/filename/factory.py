@@ -6,11 +6,11 @@ import re
 def create_from_filename(filename: str, path: str, size: int = PIXEL_SIZE):
 	"""
 	Args:
-		filename: name of file which is in designated format.
+		filename: name of file in the designated format.
 		path: path to file
 		size: image file pixel size
 	Returns:
-		a Filename object
+		Filename object
 	"""
 	dot_converted_filename = filename.replace('dot', '.')
 	idx = int(re.search(r'^([\d\.]*)_long', dot_converted_filename).group(1))
