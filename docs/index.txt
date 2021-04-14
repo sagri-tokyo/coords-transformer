@@ -16,3 +16,4 @@ Indices and tables
 ==================
 
    :doc:`Introduction <intro/intro>`
+   :doc:`Examples </intro/examples>`
