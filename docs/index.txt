@@ -15,5 +15,5 @@ Welcome to coords-transformer's documentation!
 Indices and tables
 ==================
 
-   :doc:`Introduction <intro/intro>`
-   :doc:`Examples </intro/examples>`
+   * :doc:`Introduction <intro/intro>`
+   * :doc:`Examples </intro/examples>`
