@@ -24,8 +24,7 @@ Then at the Python prompt, try to import coords-transformer:
 
 .. parsed-literal::
 
-    import coords-transformer
-    print(coords-transformer.get_version())
+    import coords_transformer
 
 That's it!
 ==========
