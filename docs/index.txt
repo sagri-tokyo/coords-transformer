@@ -15,4 +15,4 @@ Welcome to coords-transformer's documentation!
 Indices and tables
 ==================
 
-   :doc:`How to start <intro/intro>`
+   :doc:`Introduction <intro/intro>`

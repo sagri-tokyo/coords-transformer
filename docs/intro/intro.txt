@@ -5,7 +5,7 @@ coords-transformer at a glance
 ==============================
 
 coords-transformer is a library to transform pixel coordinates to latitude and longitude, and vise versa.
-It's useful when you'd like to give latitude and longitude to a certain point within in a image.
+It's useful when you'd like to get the latitude and longitude of a certain point within the satellite image.
 
 Install coords-transformer
 ==========================
@@ -26,8 +26,6 @@ Then at the Python prompt, try to import coords-transformer:
 
     import coords-transformer
     print(coords-transformer.get_version())
-
-You may have another version of coords-transformer installed.
 
 That's it!
 ==========
