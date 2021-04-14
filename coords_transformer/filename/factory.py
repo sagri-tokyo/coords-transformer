@@ -1,4 +1,4 @@
-from coords_transformer.constants import ZOOM, PIXEL_SIZE
+from coords_transformer.constants import PIXEL_SIZE
 from coords_transformer.filename.filename import FileName
 import re
 
