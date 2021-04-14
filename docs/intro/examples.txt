@@ -39,7 +39,7 @@ An example of getting the point object with pixel coordinates, longitude, and la
 	from coords_transformer.point.service import create_point_from_image_pixel_coords
 	from coords_transformer.filename.factory import create_from_filename
 
-	# Create a Filename object from filename.
+	# Create the Filename object from filename.
 	filename = "0_long130dot51051050424576-lati33dot25308662907951-size512-zoom17.jpg"
 	path = "image/"
 	filename_obj = create_from_filename(filename, path)
