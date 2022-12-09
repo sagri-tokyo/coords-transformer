@@ -1,5 +1,5 @@
 from coords_transformer.filename.filename import FileName
-import re
+from pathlib import Path
 
 
 def create_from_filename(filename: str, path: str):
@@ -10,11 +10,21 @@ def create_from_filename(filename: str, path: str):
 	Returns:
 		Filename object
 	"""
-	dot_converted_filename = filename.replace('dot', '.')
-	idx = int(re.search(r'^([\d\.]*)_long', dot_converted_filename).group(1))
-	lng = float(re.search(r'long([\d\.]*)', dot_converted_filename).group(1))
-	lat = float(re.search(r'lati([\d\.]*)', dot_converted_filename).group(1))
-	size = int(re.search(r'size(\d*)', dot_converted_filename).group(1))
-	zoom = int(re.search(r'zoom(\d*)', dot_converted_filename).group(1))
-
+	filename = Path(filename).stem
+	print(filename)
+	idx = filename.split('_')[0]
+	filename = filename.replace(f'{idx}_', '', 1)
+	print(filename)
+	count_bar = filename.count('_')
+	if count_bar == 3:
+		lng, lat, size, zoom = filename.split('_')
+		print(lng, lat, size, zoom)
+	else:
+		raise ValueError('期待するフォーマットは{idx}_long{lng}_lati{lat}_size{size}_zoom{zoom}です')
+	
+	lng = float(lng.replace('long', '').replace('dot', '.'))
+	lat = float(lat.replace('lati', '').replace('dot', '.'))
+	size = int(size.replace('size', ''))
+	zoom = int(zoom.replace('zoom', ''))
+	print(idx, lng, lat, size, zoom)
 	return FileName(lng=lng, lat=lat, idx=idx, size=size, path=path, zoom=zoom)
