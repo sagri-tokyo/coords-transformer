@@ -4,12 +4,12 @@ from coords_transformer.filename.factory import create_from_filename
 
 
 SAMPLE_FILENAME_STRS = [
-	"0_long141dot242035-lati45dot178506-size512-zoom17.jpg",
-	"1_long138dot943905-lati35dot855499-size512-zoom17.jpg",
-	"2_long130dot504283-lati30dot335927-size512-zoom17.jpg",
-	"3_long-55dot735281-lati-7dot063564-size512-zoom17.jpg",
-	"4_long127dot936168-lati-26dot533028-size512-zoom17.jpg",
-	"5_long-92dot979500-lati39dot648800-size512-zoom17.jpg",
+	"0_long141dot242035_lati45dot178506_size512_zoom17.jpg",
+	"1_long138dot943905_lati35dot855499_size512_zoom17.jpg",
+	"2_long130dot504283_lati30dot335927_size512_zoom17.jpg",
+	"3_long-55dot735281_lati-7dot063564_size512_zoom17.jpg",
+	"4_long127dot936168_lati-26dot533028_size512_zoom17.jpg",
+	"5_long-92dot979500_lati39dot648800_size512_zoom17.jpg",
     ]
 
 
@@ -26,4 +26,5 @@ SAMPLE_FILENAME_OBJS = [
 class TestFileNameFactory:
 	def test_create_from_filename(self):
 		for filename_str, filename_obj in zip(SAMPLE_FILENAME_STRS, SAMPLE_FILENAME_OBJS):
-			assert create_from_filename(filename=filename_str, path=filename_obj.path) == filename_obj
+			filename = create_from_filename(filename=filename_str, path=filename_obj.path)
+			assert  filename.value == filename_obj.value
