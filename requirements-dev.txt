@@ -18,10 +18,10 @@ pluggy==0.13.1
 py==1.10.0
 Pygments==2.8.1
 pyparsing==2.4.7
-pytest==6.2.2
-pytest-cov==2.6.1
-pytest-remotedata==0.3.2
-pytz==2021.1
+pytest
+pytest-cov
+pytest-remotedata
+pytz
 requests==2.25.1
 six==1.15.0
 snowballstemmer==2.1.0

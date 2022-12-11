@@ -13,7 +13,7 @@ class FileName:
 
     @property
     def value(self):
-        return "{}_long{}-lati{}-size{}-zoom{}".format(self.idx, self.lng, self.lat, self.size, self.zoom).replace('.', 'dot')
+        return "{}_long{}_lati{}_size{}_zoom{}".format(self.idx, self.lng, self.lat, self.size, self.zoom).replace('.', 'dot')
 
 
     @property
