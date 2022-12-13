@@ -11,10 +11,8 @@ def create_from_filename(filename: str, path: str):
 		Filename object
 	"""
 	filename = Path(filename).stem
-	print(filename)
 	idx = filename.split('_')[0]
 	filename = filename.replace(f'{idx}_', '', 1)
-	print(filename)
 	count_bar = filename.count('_')
 	if count_bar == 3:
 		lng, lat, size, zoom = filename.split('_')
@@ -26,5 +24,4 @@ def create_from_filename(filename: str, path: str):
 	lat = float(lat.replace('lati', '').replace('dot', '.'))
 	size = int(size.replace('size', ''))
 	zoom = int(zoom.replace('zoom', ''))
-	print(idx, lng, lat, size, zoom)
 	return FileName(lng=lng, lat=lat, idx=idx, size=size, path=path, zoom=zoom)
