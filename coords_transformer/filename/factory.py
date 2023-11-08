@@ -16,7 +16,6 @@ def create_from_filename(filename: str, path: str):
 	count_bar = filename.count('_')
 	if count_bar == 3:
 		lng, lat, size, zoom = filename.split('_')
-		print(lng, lat, size, zoom)
 	else:
 		raise ValueError('期待するフォーマットは{idx}_long{lng}_lati{lat}_size{size}_zoom{zoom}です')
 	
