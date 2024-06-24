@@ -4,7 +4,7 @@
 coords-transformer at a glance
 ==============================
 
-coords-transformer is a library to transform pixel coordinates to latitude and longitude, and vise versa.
+coords-transformer is a library to transform pixel coordinates to latitude and longitude, and vice versa.
 It's useful when you'd like to get the latitude and longitude of a certain point within the satellite image.
 
 Install coords-transformer
