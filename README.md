@@ -4,7 +4,7 @@
 ![Python Versions](https://img.shields.io/pypi/pyversions/coords-transformer)
 ![Documentation Status](https://readthedocs.org/projects/coords-transformer/badge/?version=latest)
 
-coords-transformer is a library to transform pixel coordinates to latitude and longitude, and vise versa.
+coords-transformer is a library to transform pixel coordinates to latitude and longitude, and vice versa.
 
 Read the documentation to learn how to use this.
 
